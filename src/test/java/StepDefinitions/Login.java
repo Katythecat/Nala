@@ -16,7 +16,6 @@ public class Login extends CommonMethods {
     @When("user enters a valid email and password")
     public void user_enters_a_valid_email_and_password() {
 
-
         sendText(login.username,ConfigReader.getValueOfProperty("username"));
         sendText(login.password,ConfigReader.getValueOfProperty("password"));
     }
