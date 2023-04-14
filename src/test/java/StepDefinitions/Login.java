@@ -16,16 +16,14 @@ public class Login extends CommonMethods {
     @When("user enters a valid email and password")
     public void user_enters_a_valid_email_and_password() {
 
-        LoginPage loginPage=new LoginPage();
 
-        sendText(loginPage.username,ConfigReader.getValueOfProperty("username"));
-        sendText(loginPage.password,ConfigReader.getValueOfProperty("password"));
+        sendText(login.username,ConfigReader.getValueOfProperty("username"));
+        sendText(login.password,ConfigReader.getValueOfProperty("password"));
     }
     @When("click on Login Button")
     public void click_on_login_button() {
 
-        LoginPage loginPage=new LoginPage();
-        doClick(loginPage.loginBtn);
+        doClick(login.loginBtn);
     }
 
     @Then("use logged in successfully")
