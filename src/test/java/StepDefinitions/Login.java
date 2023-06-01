@@ -28,8 +28,10 @@ public class Login extends CommonMethods {
     @Then("use logged in successfully")
     public void use_logged_in_successfully() {
         System.out.println("user logged in");
+        System.out.println("test");
 
     }
+
 
 
 
