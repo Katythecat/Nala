@@ -8,8 +8,11 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/Features",
         glue = "StepDefinitions",
-        dryRun = true,
-        tags= "@katy"
+        dryRun = false,
+        tags= "@smoke",
+        plugin={"pretty", "html:target/cucumber.html", "json:target/cucumber.json",
+                //this failed.txt file holds all the scenarios which are failed  during execution
+                "rerun:target/failed.txt"}
 
 
 )

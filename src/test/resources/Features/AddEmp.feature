@@ -1,5 +1,5 @@
 Feature: Employee
-  @katy
+  @smoke
   Scenario: Valid Admin login
     #Given the user navigates to the url
     When user enters a valid email and password

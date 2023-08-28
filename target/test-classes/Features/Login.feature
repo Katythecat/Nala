@@ -1,4 +1,6 @@
 Feature: test the login functionality
+
+  @smoke
   Scenario: validate admin login
     #Given the user navigates to the url
     When user enters a valid email and password
