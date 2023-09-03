@@ -32,11 +32,14 @@ public class DropdownDemo {
         System.out.println("Total options "+options.size());
         for(WebElement op:options){
             String opp=op.getText();
+            if(opp.equalsIgnoreCase("Ohio")){
+                select1.selectByValue(opp);
+            }
             System.out.println(opp);
         }
-        select1.selectByVisibleText("Ohio");
-        select1.selectByVisibleText("New Jersey");
-        select1.selectByIndex(7);
+        //select1.selectByVisibleText("Ohio");
+        //select1.selectByVisibleText("New Jersey");
+        //select1.selectByIndex(7);
         driver.findElement(By.id("printAll")).click();
 
 
