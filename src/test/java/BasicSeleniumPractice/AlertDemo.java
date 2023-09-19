@@ -29,6 +29,7 @@ public class AlertDemo {
         driver.findElement(By.xpath("//button[@onclick='myConfirmFunction()']")).click();
         //alert.dismiss();
         alert.accept();
+        // Hello//
 
 
 
