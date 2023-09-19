@@ -25,6 +25,7 @@ public class ActionClass {
         WebElement japan = driver.findElement(By.linkText("Cell Phones & Smartphones"));
         // action.moveToElement(japan).click().perform();
         japan.click();
+        //hello//
 
 
     }
